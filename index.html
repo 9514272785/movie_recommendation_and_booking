@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>CINEMA PARADISE</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div id="login">
+
+        <div class="login-box">
+
+            <h1>CINEMA PARADISE</h1>
+
+            <p>Login to Continue</p>
+
+            <input
+                type="text"
+                id="username"
+                placeholder="Username"
+            >
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Password"
+            >
+
+            <button id="loginbutton">
+                LOGIN
+            </button>
+
+            <p id="loginerror"></p>
+
+        </div>
+
+    </div>
+
+
+    <div id="mainsite">
+
+        <div class="nav">
+
+            <h2>CINEMA PARADISE</h2>
+
+            <div class="nav1">
+
+                <a href="#home">
+                    HOME
+                </a>
+
+                <a href="#movies" id="moviebutton">
+                    MOVIES
+                </a>
+
+                <a href="#booking" id="bookingbutton">
+                    BOOK TICKETS
+                </a>
+
+            </div>
+
+            <button id="logoutbutton">
+                LOGOUT
+            </button>
+
+        </div>
+
+
+        <div class="hero" id="home">
+
+            <h1>
+                WELCOME TO CINEMA PARADISE
+            </h1>
+
+            <p>
+                WATCH. CHOOSE. BOOK.
+            </p>
+
+        </div>
+
+
+        <div id="availablemovies">
+
+            <h1>
+                AVAILABLE MOVIES
+            </h1>
+
+            <p class="release-text">
+                Movies releasing this month
+            </p>
+
+            <div id="bookingmovies"></div>
+
+        </div>
+
+
+        <div class="movies" id="movies">
+
+            <h1>
+                RECOMMENDED MOVIES
+            </h1>
+
+            <input
+                type="text"
+                id="search"
+                placeholder="Search movies here"
+            >
+
+            <div id="languages"></div>
+
+            <div id="genres"></div>
+
+            <div id="recommendationmovies"></div>
+
+            <div id="movieDetails"></div>
+
+        </div>
+
+
+        <div id="booking">
+
+            <h1>
+                BOOK TICKETS
+            </h1>
+
+            <div class="booking-box">
+
+                <h2 id="moviename">
+                    MOVIE
+                </h2>
+
+                <h3>
+                    Select Show Time
+                </h3>
+
+                <div class="shows">
+
+                    <button>
+                        10:00 AM
+                    </button>
+
+                    <button>
+                        1:30 PM
+                    </button>
+
+                    <button>
+                        4:30 PM
+                    </button>
+
+                    <button>
+                        7:30 PM
+                    </button>
+
+                    <button>
+                        10:30 PM
+                    </button>
+
+                </div>
+
+
+                <h3>
+                    Select Seats
+                </h3>
+
+                <div class="screen">
+                    SCREEN
+                </div>
+
+                <div id="seats"></div>
+
+
+                <div class="seat-info">
+
+                    <div>
+                        <span class="available-seat"></span>
+                        Available
+                    </div>
+
+                    <div>
+                        <span class="selected-seat"></span>
+                        Selected
+                    </div>
+
+                    <div>
+                        <span class="booked-seat"></span>
+                        Booked
+                    </div>
+
+                </div>
+
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Your Name"
+                >
+
+                <input
+                    type="text"
+                    id="phone"
+                    placeholder="Phone Number"
+                >
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Email"
+                >
+
+
+                <p id="selectedseattext">
+                    Selected Seats : None
+                </p>
+
+                <p id="subtotal">
+                    Subtotal : 0 RS
+                </p>
+
+                <p id="gst">
+                    GST (18%) : 0 RS
+                </p>
+
+                <p id="total">
+                    Total : 0 RS
+                </p>
+
+                <button id="confirm">CONFIRM BOOKING</button>
+
+            </div>
+
+        </div>
+
+
+        <div id="summary">
+
+            <h1>
+                BOOKING CONFIRMED
+            </h1>
+
+
+            <div class="summary-box">
+
+                <div class="summary-details">
+
+                    <p id="summarymovie"></p>
+
+                    <p id="summarytime"></p>
+
+                    <p id="summaryseats"></p>
+
+                    <p id="summaryname"></p>
+
+                    <p id="summaryphone"></p>
+
+                    <p id="summaryemail"></p>
+
+                    <p id="summarysubtotal"></p>
+
+                    <p id="summarygst"></p>
+
+                    <p id="summarytotal"></p>
+
+                    <button id="backhome">
+                        BACK TO HOME
+                    </button>
+
+                    <button id="newbooking">
+                        NEW BOOKING
+                    </button>
+
+                </div>
+
+
+                <div class="summary-visual">
+
+                    <img id="summaryimage">
+
+                    <div id="qrcode"></div>
+
+                </div>
+
+            </div>
+
+
+            <div id="allbookings">
+
+                <h2>
+                    ALL YOUR BOOKINGS
+                </h2>
+                 <button id="clearbookings">CLEAR ALL BOOKINGS</button>
+                <div id="bookinglist"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+     
+     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@5/dist/email.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
